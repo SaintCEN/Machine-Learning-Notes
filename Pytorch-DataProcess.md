@@ -88,7 +88,7 @@ writer.close()
 ```
 
 ```cmd
-tensorboard --logdirs=logs --port=6007
+tensorboard --logdir=logs --port=6007
 ```
 
 ## transforms
