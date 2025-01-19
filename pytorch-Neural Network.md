@@ -213,12 +213,12 @@ for data in dataloader:
 
 ```python
 from torch import nn
-from torch.nn import Conv2d,MaxPool2d,Flatten,Linear
+from torch.nn import Conv2d,MaxPool2d,Flatten,Linear,Sequential
 
 class Model(nn.Module):
     def __init__(self):
         super(Model,self).__init__  
-        self.model1 = nn.sequential(
+        self.model1 = nn.Sequential(
             Conv2d(3,32,5,padding=2),
             MaxPool2d(2),
             Conv2d(32,32,5,padding=2),
